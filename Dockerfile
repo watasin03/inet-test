@@ -1,6 +1,6 @@
-FROM stefanscherer/node-windows:7.6.0-nano
+FROM node:16-alpine3.11
 WORKDIR /usr/app
-COPY package.json index.js .
+COPY package.json index.js ./
 RUN npm install
 COPY . .
 EXPOSE 3000

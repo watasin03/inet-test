@@ -19,6 +19,6 @@ services:
     ports:
       - 5432:5432
   express-nodejs:
-    image: node:latest
+    image: watasin03/inet_test:interview
     ports:
       - "3000:3000"
